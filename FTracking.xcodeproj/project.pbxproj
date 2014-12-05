@@ -12,6 +12,11 @@
 		2A0A3CA41A31A75C0084D204 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A0A3CA31A31A75C0084D204 /* Images.xcassets */; };
 		2A0A3CA71A31A75C0084D204 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0A3CA51A31A75C0084D204 /* Main.storyboard */; };
 		2A0A3CB31A31A75C0084D204 /* FTrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0A3CB21A31A75C0084D204 /* FTrackingTests.swift */; };
+		2A0A3CBF1A31B5E90084D204 /* libopencv_core.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0A3CBC1A31B5E90084D204 /* libopencv_core.3.0.0.dylib */; };
+		2A0A3CC01A31B5E90084D204 /* libopencv_highgui.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0A3CBD1A31B5E90084D204 /* libopencv_highgui.3.0.0.dylib */; };
+		2A0A3CC11A31B5E90084D204 /* libopencv_videoio.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0A3CBE1A31B5E90084D204 /* libopencv_videoio.3.0.0.dylib */; };
+		2A0A3CC51A31B66B0084D204 /* CvVideo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A0A3CC31A31B66B0084D204 /* CvVideo.cpp */; };
+		2A0A3CC81A31B8BD0084D204 /* ObjcVideo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A0A3CC71A31B8BD0084D204 /* ObjcVideo.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,14 @@
 		2A0A3CAC1A31A75C0084D204 /* FTrackingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTrackingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A0A3CB11A31A75C0084D204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A0A3CB21A31A75C0084D204 /* FTrackingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTrackingTests.swift; sourceTree = "<group>"; };
+		2A0A3CBC1A31B5E90084D204 /* libopencv_core.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.3.0.0.dylib; path = lib/libopencv_core.3.0.0.dylib; sourceTree = "<group>"; };
+		2A0A3CBD1A31B5E90084D204 /* libopencv_highgui.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.3.0.0.dylib; path = lib/libopencv_highgui.3.0.0.dylib; sourceTree = "<group>"; };
+		2A0A3CBE1A31B5E90084D204 /* libopencv_videoio.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videoio.3.0.0.dylib; path = lib/libopencv_videoio.3.0.0.dylib; sourceTree = "<group>"; };
+		2A0A3CC21A31B66B0084D204 /* FTracking-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTracking-Bridging-Header.h"; sourceTree = "<group>"; };
+		2A0A3CC31A31B66B0084D204 /* CvVideo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CvVideo.cpp; sourceTree = "<group>"; };
+		2A0A3CC41A31B66B0084D204 /* CvVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CvVideo.h; sourceTree = "<group>"; };
+		2A0A3CC61A31B8BD0084D204 /* ObjcVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcVideo.h; sourceTree = "<group>"; };
+		2A0A3CC71A31B8BD0084D204 /* ObjcVideo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjcVideo.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A0A3CBF1A31B5E90084D204 /* libopencv_core.3.0.0.dylib in Frameworks */,
+				2A0A3CC01A31B5E90084D204 /* libopencv_highgui.3.0.0.dylib in Frameworks */,
+				2A0A3CC11A31B5E90084D204 /* libopencv_videoio.3.0.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +73,9 @@
 		2A0A3C911A31A75B0084D204 = {
 			isa = PBXGroup;
 			children = (
+				2A0A3CBC1A31B5E90084D204 /* libopencv_core.3.0.0.dylib */,
+				2A0A3CBD1A31B5E90084D204 /* libopencv_highgui.3.0.0.dylib */,
+				2A0A3CBE1A31B5E90084D204 /* libopencv_videoio.3.0.0.dylib */,
 				2A0A3C9C1A31A75C0084D204 /* FTracking */,
 				2A0A3CAF1A31A75C0084D204 /* FTrackingTests */,
 				2A0A3C9B1A31A75C0084D204 /* Products */,
@@ -80,6 +99,11 @@
 				2A0A3CA31A31A75C0084D204 /* Images.xcassets */,
 				2A0A3CA51A31A75C0084D204 /* Main.storyboard */,
 				2A0A3C9D1A31A75C0084D204 /* Supporting Files */,
+				2A0A3CC31A31B66B0084D204 /* CvVideo.cpp */,
+				2A0A3CC41A31B66B0084D204 /* CvVideo.h */,
+				2A0A3CC21A31B66B0084D204 /* FTracking-Bridging-Header.h */,
+				2A0A3CC61A31B8BD0084D204 /* ObjcVideo.h */,
+				2A0A3CC71A31B8BD0084D204 /* ObjcVideo.mm */,
 			);
 			path = FTracking;
 			sourceTree = "<group>";
@@ -208,8 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A0A3CC51A31B66B0084D204 /* CvVideo.cpp in Sources */,
 				2A0A3CA21A31A75C0084D204 /* ViewController.swift in Sources */,
 				2A0A3CA01A31A75C0084D204 /* AppDelegate.swift in Sources */,
+				2A0A3CC81A31B8BD0084D204 /* ObjcVideo.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,10 +350,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/include",
+				);
 				INFOPLIST_FILE = FTracking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/lib";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FTracking/FTracking-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -335,10 +374,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = FTracking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FTracking/FTracking-Bridging-Header.h";
 			};
 			name = Release;
 		};
